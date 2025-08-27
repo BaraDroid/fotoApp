@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FotoApp</title>
     <link rel="icon" type="image/x-icon" href="assets/fotoapp_ikone.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <header class="header">
 
-    </header>
-    <main class="main_section"></main>
-    <footer class="footer"></footer>
-    <dialog></dialog>
+<body>
+    <div class="wrapper">
+        <header class="header" onclick="showDialog()">
+            <span>my FOTOAPP</span>
+            <img src="assets/fotoapp_ikone.png" alt="Fotoapparat Ikone" class="icone">
+        </header>
+        <main class="main_section">
+            hello
+        </main>
+        <footer class="footer">
+            <span>© <a href="https://github.com/BaraDroid" class="link">BaraDroid</a></span>
+        </footer>
+        <dialog id="detailDialog">
+            blablabla
+        </dialog>
+    </div>
 </body>
+
 </html>

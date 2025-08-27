@@ -18,3 +18,52 @@ button {
     cursor: pointer;
 }
 
+@font-face {
+    font-family: 'Poppins_bold';
+    src: url('assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+
+.wrapper {
+    font-family: 'Poppins_bold';
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+.header {
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding: .5rem 2rem;
+}
+
+.icone {
+    height: 3rem;
+}
+
+.footer {
+    background-color: var(--main-bgr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    color: black;
+}
+
+.main_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color: var(--main-bgr)
+}
+
+#detailDialog {
+    border: 1rem solid var(--dialog-accent);
+    border-radius: 1rem;
+}
