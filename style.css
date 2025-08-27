@@ -5,3 +5,16 @@
     --dialog-accent: #c7e7d3;
     --white: #fcf3e3;
 }
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
