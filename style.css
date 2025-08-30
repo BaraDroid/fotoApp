@@ -66,4 +66,12 @@ button {
 #detailDialog {
     border: 1rem solid var(--dialog-accent);
     border-radius: 1rem;
+    outline: none;
+    z-index: 9;
+    align-self: center;
+    justify-self: center;
+}
+
+body:has(dialog[open]) {
+  filter: blur(4px);
 }
