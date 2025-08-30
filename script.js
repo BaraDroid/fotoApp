@@ -11,7 +11,9 @@ function renderFotos() {
     for (let index = 0; index < savedFotos.length; index++) {
         const element = savedFotos[index];
         let imgTag = '';
-        imgTag = `<img src="${element.path}" alt="${element.name}" class="image_gallery">`;
+        imgTag = `<div class="image_container">
+        <img src="${element.path}" alt="${element.name}" class="image_gallery">
+        </div>`;
         mainEl.innerHTML += imgTag;
     }
 }

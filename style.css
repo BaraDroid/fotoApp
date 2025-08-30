@@ -79,7 +79,16 @@ body:has(dialog[open]) {
 }
 
 .image_gallery {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.image_container {
+    border-radius: 1rem;
+    border: .75rem solid var(--accent);
+    background-color: var(--accent);
     height: 10rem;
     width: 10rem;
-    object-fit: cover;
 }
