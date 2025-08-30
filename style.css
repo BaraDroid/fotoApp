@@ -60,7 +60,9 @@ button {
     justify-content: center;
     flex-wrap: wrap;
     flex-grow: 1;
-    background-color: var(--main-bgr)
+    background-color: var(--main-bgr);
+    gap: 1rem;
+    padding: 2rem 2rem;
 }
 
 #detailDialog {
@@ -74,4 +76,10 @@ button {
 
 body:has(dialog[open]) {
   filter: blur(4px);
+}
+
+.image_gallery {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
 }

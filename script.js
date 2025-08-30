@@ -9,9 +9,9 @@ function showDialog() {
 
 function renderFotos() {
     for (let index = 0; index < savedFotos.length; index++) {
-        const element = array[index];
+        const element = savedFotos[index];
         let imgTag = '';
-        imgTag = `<img src="" alt="">`;
+        imgTag = `<img src="${element.path}" alt="${element.name}" class="image_gallery">`;
         mainEl.innerHTML += imgTag;
     }
 }
