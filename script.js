@@ -17,3 +17,4 @@ function renderFotos() {
         mainEl.innerHTML += imgTag;
     }
 }
+//test for closing ticket in Jira throught a github ticket
