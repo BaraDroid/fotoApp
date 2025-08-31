@@ -91,4 +91,5 @@ body:has(dialog[open]) {
     background-color: var(--accent);
     height: 10rem;
     width: 10rem;
+    cursor: pointer;
 }
