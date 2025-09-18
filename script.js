@@ -17,4 +17,16 @@ function renderFotos() {
         mainEl.innerHTML += imgTag;
     }
 }
-//test for closing ticket in Jira throught a github ticket
+
+function showFoto() {
+    //a tady budeme predavat jako parametry
+}
+
+const escapeHtml = unsafe => {
+  return unsafe
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+};
