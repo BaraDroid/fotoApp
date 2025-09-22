@@ -5,36 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FotoApp</title>
-    <link rel="icon" type="image/x-icon" href="assets/fotoapp_ikone.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="data.js"></script>
-    <script src="script.js" defer></script>
+    <fotoapp__footer--link rel="icon" type="image/x-icon" href="assets/fotoapp_ikone.png">
+        <fotoapp__footer--link rel="stylesheet" href="style.css">
+            <script src="data.js"></script>
+            <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header" onclick="showDialog()">
+    <div class="fotoapp">
+        <header class="fotoapp__header" onclick="showDialog()">
             <span>my FOTOAPP</span>
-            <img src="assets/fotoapp_ikone.png" alt="Fotoapparat Ikone" class="icone">
+            <img src="assets/fotoapp_ikone.png" alt="Fotoapparat Ikone" class="fotoapp__header--icon">
         </header>
         <main class="main_section">
         </main>
-        <footer class="footer">
-            <span>© <a href="https://github.com/BaraDroid" class="link">BaraDroid</a></span>
+        <footer class="fotoapp__footer">
+            <span>© <a href="https://github.com/BaraDroid" class="fotoapp__footer--link">BaraDroid</a></span>
         </footer>
-        <dialog id="detailDialog">
-            <button>X</button>
+
+        <dialog id="dialogEl">
+            <button class="dialog__close_btn">+</button>
             <header>
-                <h1>Steininsel im Wasser</h1>
+                <h1 class="dialog__titel">Steininsel im Wasser</h1>
             </header>
-            <main class="overlayPhoto">
-                <button class="arrow"><</button>
-                <img src="assets/imgs/eve-9726477_1280.jpg" alt="">
-                <button class="arrow">></button>
+            <main class="dialog__show_section">
+                <button class="dialog__show_section__arrow">
+                    < </button>
+                        <img src="assets/imgs/eve-9726477_1280.jpg" alt="">
+                        <button class="dialog__show_section__arrow">></button>
             </main>
-            
-            
         </dialog>
+        
     </div>
 </body>
 
