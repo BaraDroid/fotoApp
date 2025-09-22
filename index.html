@@ -20,8 +20,8 @@
         <main class="main_section">
         </main>
         <footer class="fotoapp__footer">
-            <span>© <a aria-label="Link zur GitHub Profil von BaraDroid" href="https://github.com/BaraDroid"
-                    class="fotoapp__footer--link">BaraDroid</a></span>
+            <p>© <a aria-label="Link zur GitHub Profil von BaraDroid" href="https://github.com/BaraDroid"
+                    class="fotoapp__footer--link">BaraDroid</a></p>
         </footer>
 
         <dialog id="dialogEl" class="dialog">
@@ -41,9 +41,30 @@
             </header>
             <div class="dialog__show_section">
                 <button aria-label="zum vorigen Foto wechseln" class="dialog__show_section__arrow">
-                    < </button>
-                        <img src="assets/imgs/eve-9726477_1280.jpg" alt="">
-                        <button aria-label="zum nächsten Foto wechseln" class="dialog__show_section__arrow">></button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                        aria-label="Pfeil links">
+                        <title>Arrow Left</title>
+                        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line x1="20" y1="12" x2="4" y2="12" />
+                            <polyline points="10 6 4 12 10 18" />
+                        </g>
+                    </svg>
+
+                </button>
+                <img src="assets/imgs/eve-9726477_1280.jpg" alt="">
+                <button aria-label="zum nächsten Foto wechseln" class="dialog__show_section__arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                        aria-label="Pfeil rechts">
+                        <title>Arrow Right</title>
+                        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <polyline points="14 6 20 12 14 18" />
+                        </g>
+                    </svg>
+
+                </button>
             </div>
         </dialog>
 
