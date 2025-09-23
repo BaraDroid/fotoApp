@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FotoApp</title>
     <link rel="icon" type="image/x-icon" href="assets/fotoapp_ikone.png">
-    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="output/main.css">
     <script src="data.js"></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="fotoapp">
-        <header class="fotoapp__header" onclick="showDialog()">
+        <header class="fotoapp__header">
             <span>my FOTOAPP</span>
             <img src="assets/fotoapp_ikone.png" alt="Fotoapparat Ikone" class="fotoapp__header--icon">
         </header>
@@ -25,7 +25,7 @@
         </footer>
 
         <dialog id="dialogEl" class="dialog">
-            <button class="dialog__close_btn" aria-label="Modal schließen">
+            <button class="dialog__close_btn" aria-label="Modal schließen" onclick="closeDialog()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img"
                     aria-label="Schließen">
                     <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
@@ -36,9 +36,7 @@
                 </svg>
 
             </button>
-            <header>
-                <h1 class="dialog__titel">Steininsel im Wasser</h1>
-            </header>
+            <h1 class="dialog__title">Steininsel im Wasser</h1>
             <div class="dialog__show_section">
                 <button aria-label="zum vorigen Foto wechseln" class="dialog__show_section__arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
@@ -52,7 +50,7 @@
                     </svg>
 
                 </button>
-                <img src="assets/imgs/eve-9726477_1280.jpg" alt="">
+                <img class="dialog__show_section__image" src="assets/imgs/eve-9726477_1280.jpg" alt="">
                 <button aria-label="zum nächsten Foto wechseln" class="dialog__show_section__arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
                         aria-label="Pfeil rechts">
